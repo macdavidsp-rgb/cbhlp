@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Administração</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Login do Administrador</h2>
+  <form id="loginForm">
+    <input type="text" placeholder="Usuário" required name="usuario" />
+    <input type="password" placeholder="Senha" required name="senha" />
+    <button type="submit">Entrar</button>
+  </form>
+  <div id="painel" style="display:none;">
+    <h3>Lista de Frequência</h3>
+    <table id="tabelaFrequencia"></table>
+    <button onclick="exportarCSV()">Exportar CSV</button>
+    <button onclick="exportarPDF()">Exportar PDF</button>
+  </div>
+  <script src="script.js"></script>
+  <script src="export.js"></script>
+</body>
+</html>
