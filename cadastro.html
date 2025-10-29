@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Participante</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Ficha Cadastral</h2>
+  <form id="cadastroForm">
+    <input type="text" placeholder="Nome completo" required name="nome" />
+    <input type="text" placeholder="CPF" required name="cpf" />
+    <input type="text" placeholder="Instituição" required name="instituicao" />
+    <select name="setor" required>
+      <option value="">Selecione o setor</option>
+      <option value="Usuário">Usuário</option>
+      <option value="Poder Público">Poder Público</option>
+      <option value="Sociedade Civil">Sociedade Civil</option>
+    </select>
+    <button type="submit">Registrar Presença</button>
+  </form>
+  <p id="mensagem"></p>
+  <script src="script.js"></script>
+</body>
+</html>
